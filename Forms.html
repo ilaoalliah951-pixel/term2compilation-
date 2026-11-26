@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The HTML Form</title>
+<style>
+body{ background-color:pink; }
+fieldset{ background-color:#FFF0F5; }
+legend{ font-weight:bold; color:darkblue; }
+h1{ color:#b30059; text-align:center; }
+.blue{ color:blue; }
+.red{ color:red; }
+.green{ color:green; }
+.purple{ color:purple; }
+.orange{ color:orange; }
+</style>
+</head>
+<body bgcolor="pink">
+
+<h1><font color="#b30059">Individual Student Information</font></h1>
+
+<form>
+
+<fieldset>
+<legend>Personal Information</legend>
+First name:<br><input type="text" value="Aliyeah"><br>
+Middle name:<br><input type="text" value="Louise"><br>
+Last name:<br><input type="text" value="Drio"><br>
+</fieldset>
+<br>
+
+<fieldset>
+<legend>Academic Year</legend>
+Grade:<br><input type="text" value="9"><br>
+Section:<br><input type="text" value="Edelweiss"><br>
+</fieldset>
+<br>
+
+<fieldset>
+<legend>Individual Preferences</legend>
+Favorite Color:<br><input type="text" value="Pink"><br>
+Favorite Food:<br><input type="text" value="Fries"><br>
+Favorite Subject:<br><input type="text" value="Araling Panlipunan"><br>
+</fieldset>
+<br>
+  
+<fieldset>
+<legend>Data Protection</legend>
+Email:<br>
+<input type="email" placeholder="Enter your email"><br>
+Username:<br>
+<input type="text" required><br>
+Password:<br>
+<input type="password" required>
+<input type="reset" value="Reset">
+</fieldset>
+<br>
+
+<fieldset>
+<legend>Birthday</legend>
+Date of Birth:<br>
+<input type="date"><br>
+How many are you in the family:<br>
+<input type="number" min="2" max="20">
+</fieldset>
+<br>
+
+<fieldset>
+<legend>Additional Information</legend>
+Sex:<br>
+<input type="radio" name="sex"> <span class="blue">Male</span>
+<input type="radio" name="sex"> <span class="red">Female</span>
+<br><br>
+
+Things you like to do:<br>
+<input type="checkbox"> <span class="blue">Sports</span>
+<input type="checkbox"> <span class="purple">Music</span>
+<input type="checkbox"> <span class="red">Art</span>
+<input type="checkbox"> <span class="green">Sleeping</span>
+<input type="checkbox"> <span class="orange">Going Out</span>
+<br><br>
+
+Dream Country:<br><select><option>Japan</option></select>
+<br><br>
+Chocolate:<br><select><option>Kisses</option></select>
+<br><br>
+Snacks/Chips:<br>
+<select size="4">
+<option>Chippy</option><option>Nova</option><option>Piatos</option><option>Pringles</option>
+</select>
+<br><br>
+
+Where do you live in CALABARZON:<br>
+Provinces <input list="CALABARZON">
+<datalist id="CALABARZON">
+<option value="Cavite"><option value="Laguna"><option value="Batangas"><option value="Rizal"><option value="Quezon">
+</datalist>
+<br><br>
+
+  type your comment/suggestion here:<br>
+<textarea rows="10" cols="30"></textarea>
+  <br><br>
+
+<fieldset>
+<legend>Data Protection</legend>
+Email:<br>
+<input type="email" placeholder="Enter your email"><br>
+Username:<br>
+<input type="text" required><br>
+Password:<br>
+<input type="password" required>
+<input type="reset" value="Reset">
+</fieldset>
+<br>
+
+<fieldset>
+<legend>Birthday</legend>
+Date of Birth: <input type="date"required><br>
+How many are you in the family: <input type="number" min="2" max="20" style="width:100px;">
+</fieldset>
+<br>
+
+Upload a Profile Picture:<br>
+<input type="file" required>
+<br><br>
+
+<input type="submit" value="Save Changes">
+<br><br>
+
+<button type="button" onclick="alert('Student Information')">Press this button!</button>
+</fieldset>
+
+</form>
+</body>
+</html>

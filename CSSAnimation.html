@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The CSS animation and transition</title>
+<style>
+.animated-button {
+    display:inline-block;
+    padding:15px 30px;
+    font-size:16px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius:5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    animation: moveButton 5s infinite alternate;
+}
+.animated-button:hover{
+    background-color: yellow;
+}
+.animated-button:active{
+    background-color: red;
+}
+@keyframes moveButton {
+    0% { transform:translateX(0); }
+    100% { transform: translateX(300px); }
+}
+/*The element to apply the animation to */
+div {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+}
+/* The animation code */
+@keyframes example {
+    0% {background-color:#E5E6E5; left:0px; top:0px;}
+    25% {background-color:#D8D0C7; left:200px; top:0px;}
+    50% {background-color:#C4A887; left:200px; top:200px;}
+    75% {background-color:#A6703A; left:0px; top:200px;}
+    100% {background-color:#673D20; left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+<h1>CSS Animation</h1>
+<div></div>
+<p><b>Note:</b>When an animation is finished,it goes back to its original style. </p>
+<br><br>
+<h1>CSS Transition</h1>
+<button class="animated-button">Click Me!</button>
+</body>
+</html>

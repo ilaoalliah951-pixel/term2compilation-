@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Practice Activity #27</title>
+<style>
+  body{ font-family: Arial; padding: 10px; }
+  .name{ border: 5px solid blue; padding: 10px; margin-bottom: 10px; }
+  .address{ border: 5px solid violet; padding: 10px; margin-bottom: 10px; display: inline-block; }
+  .grade{ border: 5px solid orange; padding: 10px; width: 250px; }
+
+  .inline{
+    display: inline;
+    border: 2px solid blue;
+    background-color: yellow;
+    padding: 2px;
+  }
+  .inline-block{
+    display: inline-block;
+    border: 3px solid violet;
+    padding: 10px;
+  }
+  .block{
+    display: block;
+    border: 4px solid orange;
+    padding: 10px;
+  }
+  .block img{ width: 100px; height: 100px; }
+
+  
+  .highlight{ background-color: yellow; border: 1px solid black; padding: 2px; }
+</style>
+</head>
+<body>
+
+<h3>Demonstrating the Box Model</h3>
+<div class="name">Aliyeah Louise L. Drio</div>
+<div class="address">Roxaco Landing Subdivision, Brgy. Pantalan, Nasugbu, Batangas</div>
+<div class="grade">Grade 9 - Section Edelweiss</div>
+
+<hr>
+
+<h3>The display Property</h3>
+
+<p><b>display: inline</b></p>
+<p>My favorite color is <span class="inline">blue</span> and my other favorite is <span class="inline">black</span></p>
+
+<p><b>display: inline-block</b></p>
+<div class="inline-block">
+My two bestfriends are <span class="highlight">Chaicka</span> <span class="highlight">Andi</span> 
+</div>
+
+<p><b>display: block</b></p>
+<div class="block">
+  <img src="friend1.jpeg" alt="friend 1">
+  <img src="friend2.jpeg" alt="friend 2">
+  <p>These are my friend, the help when i need help for schoolworks and all.</p>
+</div>
+
+</body>
+</html>
